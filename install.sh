@@ -17,11 +17,11 @@ fi
 read -r -p "cdrcName environment variable is not set, add cdrc activation script? (Y/n)" response
 if [ $response = "y" ]
 then
-    echo . $target >> ~/."$(basename $SHELL)"rc
+    echo source cdrc >> ~/."$(basename $SHELL)"rc
 fi
 if [ $response = "Y" ]
 then
-    echo . $target >> ~/."$(basename $SHELL)"rc
+    echo source cdrc >> ~/."$(basename $SHELL)"rc
 fi
 
 
