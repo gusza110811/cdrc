@@ -1,0 +1,8 @@
+export cdrcName=".cdrc"
+
+function cd {
+    builtin cd $@
+    if [[ -f $cdrcName ]]; then
+        . $cdrcName
+    fi
+}
